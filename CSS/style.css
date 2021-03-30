@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+header{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../images/intro-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 120vh;
+    position: relative;
+    margin-bottom: 100px;
+    z-index: 4;
+}
+.tog-header{
+    
+    display: none;
+}
+.tog-header h5{
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 568px){
+  .mine{
+    display: none;
+  }
+  .tog-header{
+    display: inline;
+    margin-left: 85%;
+  }
+}
+@media screen and (min-width: 569px) and (max-width: 768px){
+  .mine{
+    display: none;
+  }
+  .tog-header{
+    display: inline;
+    margin-left: 85%;
+  }
+
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+  .mine{
+    display: none;
+  }
+  .tog-header{
+    display: inline;
+    margin-left: 90%;
+  }
+}
+
+.position-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+header .header-navbar{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    margin-top: 25px;
+}
+.header-navbar li{
+    padding-left: 5px;   
+}
+.header-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content h2{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 5;
+}
+.content p{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 5;
+}
+.content p::after{
+    content: " Web Developer";
+    padding: 0 10px;
+    border-right: 4px solid white;
+    animation-name: textmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes textmove{
+    30%{content: " Web Designer";}
+    60%{content: " Frontend Deeveloper";}
+    100%{content: " Graphic Designer";}
+}
+/* font-family: 'Poppins', sans-serif; */
+.brdr{
+    width: 60%;
+    height: 15px;
+    background-color: #cde1f8;
+}
+.brdr1{
+    width: 85%;
+    height: 15px;
+}
+.brdr2{
+    width: 75%;
+    height: 15px;
+}
+.brdr3{
+    width: 50%;
+    height: 15px;
+}
+.brdr4{
+    width: 90%;
+    height: 15px;
+}
+.line{
+    width: 100px;
+    height: 3px;
+}
+.tex h2{
+    font-size: 2rem;
+    color: #1e1e1e;
+}
+.tex p{
+    font-size: 1.25rem;
+    font-weight: 300;
+
+}
+.row .brdr-services{
+    border-radius: 15px;
+}
+.brdr-contact1{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #0078ff; 
+  transition: all 0.5s; 
+}
+
+.cont-srv:hover .brdr-contact1{
+  background-color: #007bff;
+  color: white;
+  border: 10px solid lightblue 
+}
+.brdr-contact2{
+  width: 80px;
+  height:80px;
+  border-radius: 50%;
+  border: 8px solid white;  
+}
+.bg-services{
+    background-image: url(../images/counters-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* height: 400px; */
+    padding: 8rem 0;
+    position: relative;
+}
+.bg-services-shadow{
+    background-color: #0078ff;
+    opacity: 0.7;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; right: 0;
+}
+.brdr-rad{
+  border: 4px solid #007bff;
+  width: 35px; height: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.hov img{
+  transition: all 1s;
+  cursor: pointer;
+}
+.hov:hover img {
+  transform: scale(1.3);
+}
+.bg-services1{
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 600px;
+  padding: 8rem 0;
+  position: relative;
+}
+.test{
+  position: relative;
+  z-index: 55555;
+}
+.cont-work{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cont-work p{
+  font-size: 1.2rem;
+  padding: 0 5rem;
+  font-weight: 300;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.brdr-rad1{
+  border: 4px solid white;
+  background-color: white;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+}
+.ind{
+  transform: translateY(50px);
+}
+.ind .ind-car{
+  width: 30px;
+  height: 5px;
+  background-color: black;
+}
+.bg-blog{
+  background-color: rgba(0,0,0,.03);
+}
+.hov1{
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.hov1:hover{
+  color: #0078ff;
+}
+
+.bg-blog img{
+  width: 10%;
+}
+.pos{
+  transform: translateY(-50%);
+}
+.bg-services2{
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* height: 600px; */
+  padding: 8rem 0;
+  position: relative;
+}
+.contact-input{
+  border: 1px solid #ced4da;
+  background-color: white;
+}
+.contact-tex{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.contact-tex1{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+.brdr-contact{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #0078ff;
+}
+.brdr-contact:hover{
+  background-color: #0078ff;
+  color: white;
+  border: 3px solid lightblue
+}
+div .fs{
+  font-size: 18px;
+}
+
+footer{
+  background-color: #0062d3;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  color: white;
+  font-size: 18px;
+}
+.brdr-fix{
+  position: fixed;
+  bottom: 2%; right: 2%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #0078ff;
+  background-color: #0078ff;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
